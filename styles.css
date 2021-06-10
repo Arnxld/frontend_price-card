@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --greyish-blue: hsl(218, 22%, 67%)
+
+}
+
+body {
+    background:hsl(204, 43%, 93%);
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.price-card {
+    background-color: #FFF;
+    max-width: 720px;
+    min-height: 500px;
+    margin: 15vh auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.introduction {
+    padding: 36px;
+}
+
+.introduction h1{
+    margin: 16px 0 24px 0;
+    color: hsl(179, 62%, 43%);
+}
+
+.introduction h2 {
+    color: var(--bright-yellow);
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.introduction p {
+    line-height: 26px;
+    color: var(--greyish-blue)
+}
+
+.more-information {
+    display: flex;
+    align-items: center;
+}
+
+
+.pricing {
+    background-color: var(--cyan);
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+
+.pricing h1 {
+    font-size: 20px;
+    color: #FFF;
+}
+
+.pricing p:first-of-type {
+    color: #fff;
+    filter: brightness(0.9);
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.pricing p:first-of-type span  {
+    font-size: 24px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.pricing p + p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+    text-align: justify;
+}
+
+.pricing button {
+    margin-top: 32px;
+    width: 100%;
+    padding: 16px 0px;
+    background-color: var(--bright-yellow);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pricing button:hover {
+    filter: brightness(0.9);
+    transition: filter 200ms;
+}
+
+.about-us {
+    background-color: var(--cyan);
+    filter: brightness(1.2);
+    padding: 32px;
+    color: #FFF;
+    flex-grow: 1;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.about-us h1 {
+    font-size: 20px;
+}
+
+.about-us ul {
+    margin-top: 16px;
+    list-style: none;
+    line-height: 22px;
+}
+
+
